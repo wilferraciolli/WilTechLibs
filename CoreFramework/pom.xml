@@ -9,8 +9,8 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	
-	<name>Rest Framework</name>
-	<artifactId>wt-rest-framework</artifactId>
+	<name>Core Framework</name>
+	<artifactId>wt-core-framework</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 	
@@ -29,6 +29,12 @@
 			<artifactId>spring-boot-starter-hateoas</artifactId>
 			<version>${spring-boot-parent.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring-core.version}</version>
+		</dependency>
+		
 		
 		<!-- Serialize and deserialize objects -->
 		<dependency>
