@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>com.wiltech</groupId>
+	<artifactId>ParentLibrary</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<modules>
+		<module>RestFramework</module>
+	</modules>
+	<packaging>pom</packaging>
+	<name>WiTech Libraries Parent Project</name>
+	
+	<properties>
+		<!-- Project Properties -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.sdk.version>11</java.sdk.version>
+		<java.release.version>11</java.release.version>
+		<classifier/>
+		
+		<!-- Third party -->
+		<spring-core.version>2.1.4.RELEASE</spring-core.version>
+		<jackson.version>2.10.1</jackson.version>
+		<lombok.version>1.18.10</lombok.version>
+	
+	</properties>
+	
+	<build>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>src/main/java</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+		
+		<plugins>
+		
+		</plugins>
+	</build>
+	
+	<dependencies>
+	
+	</dependencies>
+	
+	<repositories>
+		<repository>
+			<id>central</id>
+			<name>central</name>
+			<url>http://repo.maven.apache.org/maven2</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>maven-repo1</id>
+			<name>central</name>
+			<url>http://repo1.maven.org/maven2</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>maven-uk</id>
+			<name>central</name>
+			<url>http://uk.maven.org/maven2</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+	
+	<!--	<modules>-->
+	<!--		<module>Access Management</module>-->
+	<!--	</modules>-->
+
+</project>
