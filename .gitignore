@@ -32,3 +32,6 @@ RestFramework/target/maven-status/maven-compiler-plugin/testCompile/default-test
 CoreFramework/CoreFramework.iml
 CoreFramework/wt-core-framework.iml
 CoreFramework/target/
+LinksFramework/LinksFramework.iml
+LinksFramework/wt-links-framework.iml
+LinksFramework/target/

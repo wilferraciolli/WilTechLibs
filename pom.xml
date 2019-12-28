@@ -10,6 +10,7 @@
 	<modules>
 		<module>RestFramework</module>
 		<module>CoreFramework</module>
+		<module>LinksFramework</module>
 	</modules>
 	<packaging>pom</packaging>
 	<name>WiTech Libraries Parent Project</name>
