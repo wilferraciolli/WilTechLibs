@@ -18,7 +18,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.sdk.version>11</java.sdk.version>
 		<java.release.version>11</java.release.version>
-		<classifier/>
+		
 		
 		<!-- Third party -->
 		<spring-core.version>2.1.4.RELEASE</spring-core.version>
@@ -27,25 +27,25 @@
 	
 	</properties>
 	
-	<build>
-		<sourceDirectory>src/main/java</sourceDirectory>
-		<testSourceDirectory>src/test/java</testSourceDirectory>
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-			</resource>
-			<resource>
-				<directory>src/main/java</directory>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</resource>
-		</resources>
-		
-		<plugins>
-		
-		</plugins>
-	</build>
+	<!--	<build>-->
+	<!--		<sourceDirectory>src/main/java</sourceDirectory>-->
+	<!--		<testSourceDirectory>src/test/java</testSourceDirectory>-->
+	<!--		<resources>-->
+	<!--			<resource>-->
+	<!--				<directory>src/main/resources</directory>-->
+	<!--			</resource>-->
+	<!--			<resource>-->
+	<!--				<directory>src/main/java</directory>-->
+	<!--				<excludes>-->
+	<!--					<exclude>**/*.java</exclude>-->
+	<!--				</excludes>-->
+	<!--			</resource>-->
+	<!--		</resources>-->
+	<!--		-->
+	<!--		<plugins>-->
+	<!--		-->
+	<!--		</plugins>-->
+	<!--	</build>-->
 	
 	<dependencies>
 	
@@ -93,8 +93,8 @@
 		</repository>
 	</repositories>
 	
-	<!--	<modules>-->
-	<!--		<module>Access Management</module>-->
-	<!--	</modules>-->
+<!--	<modules>-->
+<!--		<module>Access Management</module>-->
+<!--	</modules>-->
 
 </project>
