@@ -56,7 +56,7 @@ public class BaseRestService {
      */
     public Resources<Object> emptyResources() {
         final EmbeddedWrappers wrappers = new EmbeddedWrappers(false);
-        final EmbeddedWrapper wrapper = wrappers.emptyCollectionOf(ProviderResourceResponse.class);
+        final EmbeddedWrapper wrapper = wrappers.emptyCollectionOf(CollectionResourceResponse.class);
 
         return new Resources<>(Arrays.asList(wrapper));
     }

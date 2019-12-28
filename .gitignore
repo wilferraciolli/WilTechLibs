@@ -26,3 +26,6 @@ ParentLibrary.iml
 RestFramework/RestFramework.iml
 RestFramework/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
 RestFramework/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+RestFramework/wt-rest-framework.iml
+RestFramework/target/maven-archiver/pom.properties
+RestFramework/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst

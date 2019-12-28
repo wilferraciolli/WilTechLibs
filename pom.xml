@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.wiltech</groupId>
-	<artifactId>ParentLibrary</artifactId>
+	<artifactId>wt-parent-library</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<modules>
 		<module>RestFramework</module>
@@ -16,9 +16,12 @@
 	<properties>
 		<!-- Project Properties -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>11</java.version>
 		<java.sdk.version>11</java.sdk.version>
 		<java.release.version>11</java.release.version>
 		
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
 		
 		<!-- Third party -->
 		<spring-core.version>2.1.4.RELEASE</spring-core.version>
@@ -46,10 +49,8 @@
 	<!--		-->
 	<!--		</plugins>-->
 	<!--	</build>-->
+
 	
-	<dependencies>
-	
-	</dependencies>
 	
 	<repositories>
 		<repository>
@@ -96,5 +97,19 @@
 <!--	<modules>-->
 <!--		<module>Access Management</module>-->
 <!--	</modules>-->
+	
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<release>11</release>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</reporting>
 
 </project>
