@@ -8,8 +8,8 @@ package com.wiltech;
 
 import java.util.Map;
 
+import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.Link;
-import org.springframework.hateoas.Resources;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -20,7 +20,7 @@ import lombok.Data;
  * @param <T> the type parameter
  */
 @Data
-public class CollectionResources<T> extends Resources {
+public class CollectionResources<T> extends CollectionModel {
 
     @JsonProperty("_meta")
     private Map.Entry[] meta;

@@ -1,7 +1,5 @@
 package com.wiltech;
 
-import org.springframework.hateoas.core.Relation;
-
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 @NoArgsConstructor
-@Relation(collectionRelation = "collection")
+//@Relation(collectionRelation = "collection")
 public class CollectionResourceResponse extends BaseDTO {
 
 }

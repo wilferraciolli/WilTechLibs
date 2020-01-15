@@ -3,10 +3,8 @@ package com.wiltech;
 import java.net.URI;
 import java.util.Arrays;
 
+import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.Link;
-import org.springframework.hateoas.Resources;
-import org.springframework.hateoas.core.EmbeddedWrapper;
-import org.springframework.hateoas.core.EmbeddedWrappers;
 import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
@@ -54,10 +52,10 @@ public class BaseRestService {
      * Empty resources resources. Use this resource to force the serializer to add am empty array.
      * @return the resources
      */
-    public Resources<Object> emptyResources() {
-        final EmbeddedWrappers wrappers = new EmbeddedWrappers(false);
-        final EmbeddedWrapper wrapper = wrappers.emptyCollectionOf(CollectionResourceResponse.class);
+    public CollectionModel<Object> emptyResources() {
+        //        final EmbeddedWrappers wrappers = new EmbeddedWrappers(false);
+        //        final EmbeddedWrapper wrapper = wrappers.emptyCollectionOf(CollectionResourceResponse.class);
 
-        return new Resources<>(Arrays.asList(wrapper));
+        return new CollectionModel<>(Arrays.asList());
     }
 }

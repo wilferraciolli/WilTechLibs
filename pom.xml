@@ -7,13 +7,15 @@
 	<groupId>com.wiltech</groupId>
 	<artifactId>wt-parent-library</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
+	
+	<packaging>pom</packaging>
+	<name>WiTech Libraries Parent Project</name>
+	
 	<modules>
 		<module>RestFramework</module>
 		<module>CoreFramework</module>
 		<module>LinksFramework</module>
 	</modules>
-	<packaging>pom</packaging>
-	<name>WiTech Libraries Parent Project</name>
 	
 	<properties>
 		<!-- Project Properties -->
@@ -26,8 +28,8 @@
 		<maven.compiler.target>11</maven.compiler.target>
 		
 		<!-- Third party -->
-		<spring-core.version>5.1.6.RELEASE</spring-core.version>
-		<spring-boot-parent.version>2.1.4.RELEASE</spring-boot-parent.version>
+		<spring-core.version>5.2.2.RELEASE</spring-core.version>
+		<spring-boot-parent.version>2.2.2.RELEASE</spring-boot-parent.version>
 		<jackson.version>2.10.1</jackson.version>
 		<lombok.version>1.18.10</lombok.version>
 	

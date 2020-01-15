@@ -1,7 +1,6 @@
 package com.wiltech;
 
 import org.springframework.hateoas.Link;
-import org.springframework.hateoas.mvc.ControllerLinkBuilder;
 
 public class ProvidersLinkProvider {
 
