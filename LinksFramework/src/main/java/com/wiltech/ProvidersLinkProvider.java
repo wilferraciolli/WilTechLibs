@@ -5,6 +5,6 @@ import org.springframework.hateoas.Link;
 public class ProvidersLinkProvider {
 
     public static Link buildProvidersLink() {
-        return new Link("http://localhost:5002/api/providers", "providers");
+        return new Link("http://localhost:5001/api/providers", "providers");
     }
 }

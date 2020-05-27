@@ -12,9 +12,10 @@
 	<name>WiTech Libraries Parent Project</name>
 	
 	<modules>
-		<module>RestFramework</module>
 		<module>CoreFramework</module>
 		<module>LinksFramework</module>
+		<module>RestFramework</module>
+		<module>SecurityFramework</module>
 	</modules>
 	
 	<properties>
@@ -30,6 +31,7 @@
 		<!-- Third party -->
 		<spring-core.version>5.2.2.RELEASE</spring-core.version>
 		<spring-boot-parent.version>2.2.2.RELEASE</spring-boot-parent.version>
+		<jwt.version>0.9.1</jwt.version>
 		<jackson.version>2.10.1</jackson.version>
 		<lombok.version>1.18.10</lombok.version>
 	
